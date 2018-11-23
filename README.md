@@ -1,11 +1,10 @@
-# Node with express connect MySql
+## Node with express connect MySql
 
-## Mysql scripts commands
+### Mysql scripts commands
 
-Create a DB:
-CREATE DATABASE mydb;
-
-USE mydb;
+```
+CREATE DATABASE mydb
+USE mydb
 
 Create table:
 CREATE TABLE IF NOT EXISTS `tasks` (
@@ -26,3 +25,15 @@ INSERT INTO `tasks` (`id`, `task`, `status`, `created_at`) VALUES
 (3, 'Fix bugs', 1, '2016-04-10 23:50:40'),
 (4, 'Refactor Code', 1, '2016-04-10 23:50:40'),
 (5, 'Push to prod', 1, '2016-04-10 23:50:50');
+
+```
+
+### Start Commands
+```
+nodemon
+or 
+node start
+or
+node app.js
+
+```
