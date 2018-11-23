@@ -2,6 +2,8 @@
 
 ### Mysql scripts commands
 
+Use these below script to create sample data on Mysql database.
+
 ```
 CREATE DATABASE mydb
 USE mydb
@@ -13,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `tasks` (
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `created_at` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
- 
+
 ALTER TABLE `tasks` ADD PRIMARY KEY (`id`);
 ALTER TABLE `tasks` MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
@@ -29,6 +31,7 @@ INSERT INTO `tasks` (`id`, `task`, `status`, `created_at`) VALUES
 ```
 
 ### Start Commands
+
 ```
 nodemon
 or 
